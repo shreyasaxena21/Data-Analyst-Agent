@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+openai>=1.0.0  # Ensure we use the modern OpenAI library syntax
+pandas
+matplotlib
+duckdb
+requests
+python-dotenv
+beautifulsoup4
