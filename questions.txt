@@ -1,0 +1,17 @@
+Scrape the list of highest grossing films from Wikipedia. It is at the URL:
+https://en.wikipedia.org/wiki/List_of_highest-grossing_films
+
+The scraped data will have a column for worldwide gross named 'Worldwide gross' and a column for the year named 'Year'. The film title is in a column named 'Title'. The other columns for analysis are 'Rank' and 'Peak'.
+
+When cleaning the 'Worldwide gross' column, you must first use a regular expression to extract only the numerical values. The regex should be robust enough to handle numbers with commas and decimal points. After extraction, remove the commas and then use `pd.to_numeric` with `errors='coerce'` to convert the column to a numeric type. Drop any rows where this column is `NaN`. This is essential to prevent conversion errors.
+
+Answer the following questions and respond with a JSON array of strings containing the answer.
+1. How many $2 bn movies were released before 2000?
+2. Which is the earliest film that grossed over $1.5 bn?
+3. What's the correlation between the Rank and Peak?
+4. Draw a scatterplot of Rank and Peak along with a dotted red regression line through it.
+   Return as a base-64 encoded data URI, "data:image/png;base64,iVBORw0KG..." under 100,000 bytes.
+
+The final result should be a list and it must be printed as a JSON string using `json.dumps()`.
+
+
