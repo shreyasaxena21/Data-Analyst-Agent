@@ -23,7 +23,7 @@ A powerful API service that uses AI and data processing libraries to source, pre
 
 1. **Clone or download the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/shreyasaxena21/Data-Analyst-Agent
    cd data-analyst-agent
    ```
 
@@ -285,3 +285,4 @@ For issues and questions:
 - Enable Flask debug mode for development: `app.run(debug=True)`
 - Monitor logs for detailed error information
 - Test with sample data before using real datasets
+
