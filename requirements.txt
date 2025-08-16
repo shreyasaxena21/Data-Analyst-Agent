@@ -7,4 +7,6 @@ matplotlib
 duckdb
 requests
 python-dotenv
+
 beautifulsoup4
+seaborn
